@@ -12,32 +12,34 @@
 <body>
     <section class="bg-black h-auto p-40">
 
-        <div class="w-[30%] h-auto bg-white m-auto rounded-3xl pt-10 shadow-xl ">
+        <div class="w-[30%] h-auto bg-white m-auto rounded-3xl pt-10 shadow-xl">
 
-            <div class="w-[90%] h-28 bg-gray-200 m-auto rounded-xl shadow-inner"></div>
+            <div class="w-[90%] h-28  m-auto rounded-xl shadow-inner text-[50px] text-black" id="display">0</div>
 
             <div class="grid grid-cols-4 gap-3 mt-7 mx-4 pb-4">
-                <button class="bg-orange-500 rounded-2xl text-[50px] text-white shadow-2xl">c</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">+</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">%</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">/</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">7</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">8</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">9</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">*</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">4</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">5</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">6</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">-</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">1</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">2</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">3</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl row-span-2">+</button>
-                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl">0</button>
+            
+                <button class="bg-orange-500 rounded-2xl text-[50px] text-white shadow-2xl" onclick="clearing">c</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('.')">.</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('%')">%</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('/')">/</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('7')">7</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('8')">8</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('9')">9</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('*')">*</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('4')">4</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('5')">5</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('6')">6</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('-')">-</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('1')">1</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('2')">2</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('3')">3</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl row-span-2"  onclick="number('+')">+</button>
+                <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl"  onclick="number('0')">0</button>
                 <button class="bg-orange-500 rounded-2xl text-[50px] text-white col-span-2">=</button>
             </div>
 
         </div>
+        
 
 
     </section>

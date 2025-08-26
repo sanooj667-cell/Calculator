@@ -10,15 +10,18 @@
 </head>
 
 <body>
-    <section class="bg-black h-auto p-40">
+    <section class="bg-white h-auto p-40">
 
-        <div class="w-[30%] h-auto bg-white m-auto rounded-3xl pt-10 shadow-xl">
 
-            <div class="w-[90%] h-28  m-auto rounded-xl shadow-inner text-[50px] text-black" id="display">0</div>
+        <div class="w-[30%] h-auto bg-slate-500 m-auto rounded-3xl pt-10 shadow-xl">
 
-            <div class="grid grid-cols-4 gap-3 mt-7 mx-4 pb-4">
+            <h1>CASIYO</h1>
+
+            <div class="w-[90%] h-28  m-auto rounded-xl shadow-inner text-[50px] text-black bg-slate-300" id="display">0</div>
+
+            <div class="grid grid-cols-4 gap-3 mt-7 mx-4 pb-4 ">
             
-                <button class="bg-orange-500 rounded-2xl text-[50px] text-white shadow-2xl" onclick="clearing">c</button>
+                <button class="bg-orange-500 rounded-2xl text-[50px] text-white shadow-2xl" onclick="clearing()">c</button>
                 <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('.')">.</button>
                 <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('%')">%</button>
                 <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('/')">/</button>
@@ -35,7 +38,7 @@
                 <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl" onclick="number('3')">3</button>
                 <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl row-span-2"  onclick="number('+')">+</button>
                 <button class="bg-slate-400 rounded-2xl text-[50px] text-white shadow-2xl"  onclick="number('0')">0</button>
-                <button class="bg-orange-500 rounded-2xl text-[50px] text-white col-span-2">=</button>
+                <button class="bg-orange-500 rounded-2xl text-[50px] text-white col-span-2" onclick="equals()">=</button>
             </div>
 
         </div>
